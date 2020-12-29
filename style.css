@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*-----------VAR-----------*/
+/*-----RESPONSIVE----*/
 /*-----------@Mixin-----------*/
 /*-----------ALL-----------*/
 * {
@@ -12,7 +13,6 @@
 html {
   width: 100%;
   height: 100%;
-  background-color: red;
 }
 
 body {
@@ -178,6 +178,12 @@ main .barre .container .burger {
   transition: all 0.3s ease-out;
 }
 
+@media (max-width: 599px) {
+  main .barre .container .burger {
+    display: inline-block;
+  }
+}
+
 main .barre .container .burger:hover {
   width: 30rem;
   height: 60rem;
@@ -196,6 +202,12 @@ main .barre .container #menu {
           transform: translateY(10%);
   /*BUTTON HOVER*/
   /*BUTTON HOVER*/
+}
+
+@media (max-width: 599px) {
+  main .barre .container #menu {
+    display: none;
+  }
 }
 
 main .barre .container #menu .menu__One {
@@ -874,23 +886,6 @@ main .barre .container .container__click:hover {
   }
   100% {
     opacity: 100%;
-  }
-}
-
-/* ---- RESPONSIVE------MEDIA QUERIES-----*/
-/*---------TABLETTE---------*/
-/*----------MEDIA QUERIES------------*/
-/*---------SMARTPHONE---------*/
-@media screen and (max-width: 800px) {
-  /*------NAV LOGO & TEXT------*/
-  .burger {
-    display: inline-block;
-  }
-  /*-----------NAV COMPUTER-----------*/
-  #menu {
-    /*CONTAINER FLEX*/
-    display: none;
-    color: yellow;
   }
 }
 /*# sourceMappingURL=style.css.map */
