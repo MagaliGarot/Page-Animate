@@ -27,6 +27,7 @@ Réalisation d'une page wev d'après un wireframe existant réalisé par [Ruslan
 * style.css
 
 ## Responsive
+(En construction)
 * Smartphone
 * Tablette
 
