@@ -7,8 +7,8 @@ $font:'Proza Libre', sans-serif;
 @mixin menu{
     color: white;
     height: 5rem;
-    width: 12.5rem;
-    padding: 3px 3px;
+    width: 13rem;
+    padding: 2px 2px;
     margin-top: 0.625rem;
     /*FONT*/
     font-family: $font;
@@ -47,7 +47,8 @@ a {
 
 main{
     background-color: $colorGray;
-    height: 1000px;
+    width: 100%;
+    height: 100%;
     /*ANIMATION KEYFRAME*/
     animation-name: sizeMain;
     animation-duration: 1s;
@@ -59,6 +60,8 @@ main{
 
 body{
     background-color: $colorWhite;
+    width: 100%;
+    height: 100%;
 }
 
 /*--------BODY--------*/
@@ -110,11 +113,12 @@ body{
 
     .container{
         display: flex;
+        justify-content: space-between;
     
         .container__icone{
             display: flex;
             justify-content: flex-start;
-            margin-left: 2.5rem;
+            margin-left: 2rem;
 
             @include axeY;
              /*ANIMATION KEYFRAME*/
@@ -143,7 +147,7 @@ body{
         /*CONTAINER FLEX*/
         display: flex;
         align-items: center;
-        margin-left: 12.5rem;
+        margin-left: 5rem;
         transform: translateY(10%);
     
        .menu__One{
@@ -212,7 +216,7 @@ body{
              .container__click{
                 width: 18.75rem;
                 height: 4.688rem;
-                margin-left: 2.5rem;
+                margin-right: 2rem;
                 border-radius: 0px 10px 0px 10px;
                 background-color: #576967;
                 border: none;
@@ -239,9 +243,9 @@ body{
     }
 }
 
-.videoPoppy{
-    width: 100%;
-}
+// .videoPoppy{
+//     width: 100%;
+// }
 
 /*LOGO START*/
 
@@ -378,27 +382,27 @@ body{
 @keyframes sizeMain{
     /*ETAPE DE TRANSFORMATIONS*/
   0%{
-     height: 1000px;
+     height: 100%;
  }
 
  10%{
-    height: 900px;
+    height: 90%;
  }
 
   25%{
-     height: 800px;
+     height: 80%;
   }
 
   50%{
-     height: 600px;
+     height: 60%;
   }
 
   75%{
-     height: 500px;
+     height: 50%;
  }
 
  100%{
-     height: 400px;
+     height: 30%;
      }
  }
 

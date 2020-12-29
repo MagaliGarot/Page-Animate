@@ -20,7 +20,8 @@ a {
 
 main {
   background-color: #4f5f5e;
-  height: 1000px;
+  width: 100%;
+  height: 100%;
   /*ANIMATION KEYFRAME*/
   -webkit-animation-name: sizeMain;
           animation-name: sizeMain;
@@ -41,6 +42,8 @@ main {
 
 body {
   background-color: white;
+  width: 100%;
+  height: 100%;
 }
 
 /*--------BODY--------*/
@@ -108,6 +111,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /*-----------NAV-----------*/
   /*BUTTON LEFT*/
   /*BUTTON HOVER*/
@@ -120,7 +126,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-left: 2.5rem;
+  margin-left: 2rem;
   /* POSITION : Y -> position TOP*/
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -162,7 +168,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12.5rem;
+  margin-left: 5rem;
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
 }
@@ -186,8 +192,8 @@ body {
           animation-fill-mode: forwards;
   color: white;
   height: 5rem;
-  width: 12.5rem;
-  padding: 3px 3px;
+  width: 13rem;
+  padding: 2px 2px;
   margin-top: 0.625rem;
   /*FONT*/
   font-family: "Proza Libre", sans-serif;
@@ -219,8 +225,8 @@ body {
           animation-fill-mode: forwards;
   color: white;
   height: 5rem;
-  width: 12.5rem;
-  padding: 3px 3px;
+  width: 13rem;
+  padding: 2px 2px;
   margin-top: 0.625rem;
   /*FONT*/
   font-family: "Proza Libre", sans-serif;
@@ -252,8 +258,8 @@ body {
           animation-fill-mode: forwards;
   color: white;
   height: 5rem;
-  width: 12.5rem;
-  padding: 3px 3px;
+  width: 13rem;
+  padding: 2px 2px;
   margin-top: 0.625rem;
   /*FONT*/
   font-family: "Proza Libre", sans-serif;
@@ -285,8 +291,8 @@ body {
           animation-fill-mode: forwards;
   color: white;
   height: 5rem;
-  width: 12.5rem;
-  padding: 3px 3px;
+  width: 13rem;
+  padding: 2px 2px;
   margin-top: 0.625rem;
   /*FONT*/
   font-family: "Proza Libre", sans-serif;
@@ -318,8 +324,8 @@ body {
           animation-fill-mode: forwards;
   color: white;
   height: 5rem;
-  width: 12.5rem;
-  padding: 3px 3px;
+  width: 13rem;
+  padding: 2px 2px;
   margin-top: 0.625rem;
   /*FONT*/
   font-family: "Proza Libre", sans-serif;
@@ -335,7 +341,7 @@ body {
 .barre .container .container__click {
   width: 18.75rem;
   height: 4.688rem;
-  margin-left: 2.5rem;
+  margin-right: 2rem;
   border-radius: 0px 10px 0px 10px;
   background-color: #576967;
   border: none;
@@ -367,10 +373,6 @@ body {
 
 .barre .container .container__click:hover {
   background-color: #fe7d76;
-}
-
-.videoPoppy {
-  width: 100%;
 }
 
 /*LOGO START*/
@@ -615,43 +617,43 @@ body {
 @-webkit-keyframes sizeMain {
   /*ETAPE DE TRANSFORMATIONS*/
   0% {
-    height: 1000px;
+    height: 100%;
   }
   10% {
-    height: 900px;
+    height: 90%;
   }
   25% {
-    height: 800px;
+    height: 80%;
   }
   50% {
-    height: 600px;
+    height: 60%;
   }
   75% {
-    height: 500px;
+    height: 50%;
   }
   100% {
-    height: 400px;
+    height: 30%;
   }
 }
 @keyframes sizeMain {
   /*ETAPE DE TRANSFORMATIONS*/
   0% {
-    height: 1000px;
+    height: 100%;
   }
   10% {
-    height: 900px;
+    height: 90%;
   }
   25% {
-    height: 800px;
+    height: 80%;
   }
   50% {
-    height: 600px;
+    height: 60%;
   }
   75% {
-    height: 500px;
+    height: 50%;
   }
   100% {
-    height: 400px;
+    height: 30%;
   }
 }
 
