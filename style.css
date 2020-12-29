@@ -185,7 +185,7 @@ main .barre .container .burger {
   border-radius: 10px;
   width: 2rem;
   height: 4.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 3;
   /* POSITION : Y -> position TOP*/
   -webkit-transform: translateY(-100%);
