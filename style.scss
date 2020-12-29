@@ -6,7 +6,8 @@ $font:'Proza Libre', sans-serif;
 /*-----RESPONSIVE----*/
 
 $breakpoints: (
-    phone-only: 599px,
+    phone-only: 800px,
+    /*599*/
     tablet-portrait-up: 600px,
     tablet-landscape-up:900px,
     desktop-up-small: 1200px,
@@ -139,13 +140,10 @@ main{
     /*------NAV LOGO & TEXT------*/
     
     .barre{
-
-        @include for-phone-only {
-            display: none;
-        }
     
         .container{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
         
             .container__icone{

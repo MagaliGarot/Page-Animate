@@ -107,16 +107,12 @@ main .logo .logo__text {
           animation-fill-mode: forwards;
 }
 
-@media (max-width: 599px) {
-  main .barre {
-    display: none;
-  }
-}
-
 main .barre .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -184,7 +180,7 @@ main .barre .container .burger {
   transition: all 0.3s ease-out;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 800px) {
   main .barre .container .burger {
     display: inline-block;
   }
@@ -210,7 +206,7 @@ main .barre .container #menu {
   /*BUTTON HOVER*/
 }
 
-@media (max-width: 599px) {
+@media (max-width: 800px) {
   main .barre .container #menu {
     display: none;
   }
