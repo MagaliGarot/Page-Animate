@@ -107,6 +107,12 @@ main .logo .logo__text {
           animation-fill-mode: forwards;
 }
 
+@media (max-width: 599px) {
+  main .barre {
+    display: none;
+  }
+}
+
 main .barre .container {
   display: -webkit-box;
   display: -ms-flexbox;
