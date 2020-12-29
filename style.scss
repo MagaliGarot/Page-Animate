@@ -1,0 +1,417 @@
+/*-----------VAR-----------*/
+$colorGray :#4f5f5e;
+$colorWhite :white;
+$font:'Proza Libre', sans-serif;
+
+/*-----------@Mixin-----------*/
+@mixin menu{
+    color: white;
+    height: 5rem;
+    width: 12.5rem;
+    padding: 3px 3px;
+    margin-top: 0.625rem;
+    /*FONT*/
+    font-family: $font;
+    text-align: center;
+    font-weight: 800;
+    font-size: 0,5rem;
+    text-decoration: none;
+}
+
+@mixin anim{
+    /*Permet un mouvement plus fluide*/
+    animation-timing-function: linear;
+    /*Animation qui se répète pas*/
+    animation-fill-mode: forwards;
+}
+
+@mixin axeY{
+     /* POSITION : Y -> position TOP*/
+     transform: translateY(-100%);
+}
+/*-----------ALL-----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+main{
+    background-color: $colorGray;
+    height: 1000px;
+    /*ANIMATION KEYFRAME*/
+    animation-name: sizeMain;
+    animation-duration: 1s;
+    transition-duration: 4s;
+    /*Délai avant activation*/
+    animation-delay: 3s;
+    @include anim;
+}
+
+body{
+    background-color: $colorWhite;
+}
+
+/*--------BODY--------*/
+
+/*--LOGO & TEXT START--*/
+
+.logo{
+    display: flex;
+    position: absolute;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 15%;
+
+    .logo__picture{
+    position: relative;
+    width: 18.75rem;
+    display: block;
+    margin-top: -3.125rem;
+    /*ANIMATION KEYFRAME*/
+     animation-name: startLogo;
+     animation-duration: 3s;
+     /*Durée de l'anim*/
+     transition-duration: 3s;
+     /*Délai avant activation*/
+     animation-delay: 0s;
+     @include anim;
+    }
+
+    .logo__text{
+        position: relative;
+        color:$colorWhite;
+        font-family: $font;
+        font-size: 6rem;
+            /*ANIMATION KEYFRAME*/
+     animation-name: startTitle;
+     animation-duration: 3s;
+     /*Durée de l'anim*/
+     transition-duration: 3s;
+     /*Délai avant activation*/
+     animation-delay: 0s;
+     @include anim;
+    
+    }
+}
+
+/*------NAV LOGO & TEXT------*/
+
+.barre{
+
+    .container{
+        display: flex;
+    
+        .container__icone{
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 2.5rem;
+
+            @include axeY;
+             /*ANIMATION KEYFRAME*/
+            animation-name: nav;
+            animation-duration: 1s;
+            transition-duration: 5s;
+            /*Délai avant activation*/
+            animation-delay: 5s;
+            @include anim;
+    
+            .container__icone__image{
+                display: block;
+                margin-top: -0.75rem;
+                width: 6.25rem;
+            }
+        
+            .container__icone__text{
+                color:$colorWhite;
+                font-family: $font;
+                margin-left: 3px;
+            }
+        }
+    
+        /*-----------NAV-----------*/
+     #menu {
+        /*CONTAINER FLEX*/
+        display: flex;
+        align-items: center;
+        margin-left: 12.5rem;
+        transform: translateY(10%);
+    
+       .menu__One{
+        /*ANIMATION KEYFRAME*/
+        animation-name: nav;
+        animation-duration: 1s;
+        transition-duration: 4s;
+        /*Délai avant activation*/
+        animation-delay: 4s;
+        @include anim;
+        @include menu;
+        @include axeY;
+      }
+
+      .menu__Two{
+        /*ANIMATION KEYFRAME*/
+        animation-name: nav;
+        animation-duration: 1s;
+        transition-duration: 4s;
+        /*Délai avant activation*/
+        animation-delay: 4.5s;
+        @include anim;
+        @include menu;
+        @include axeY;
+      }
+
+      .menu__Three{
+        /*ANIMATION KEYFRAME*/
+        animation-name: nav;
+        animation-duration: 1s;
+        transition-duration: 4s;
+        /*Délai avant activation*/
+        animation-delay: 5s;
+        @include anim;
+        @include menu;
+        @include axeY;
+      }
+
+      .menu__Four{
+        /*ANIMATION KEYFRAME*/
+        animation-name: nav;
+        animation-duration: 1s;
+        transition-duration: 4s;
+        /*Délai avant activation*/
+        animation-delay: 5.5s;
+        @include anim;
+        @include menu;
+        @include axeY;
+      }
+
+      .menu__Five{
+        /*ANIMATION KEYFRAME*/
+        animation-name: nav;
+        animation-duration: 1s;
+        transition-duration: 4s;
+        /*Délai avant activation*/
+        animation-delay: 6s;
+        @include anim;
+        @include menu;
+        @include axeY;
+      }
+
+    }
+    
+             /*BUTTON LEFT*/
+             .container__click{
+                width: 18.75rem;
+                height: 4.688rem;
+                margin-left: 2.5rem;
+                border-radius: 0px 10px 0px 10px;
+                background-color: #576967;
+                border: none;
+                /*FONT*/
+                color: $colorWhite;
+                font-family: $font;
+                font-size: 0,5em;
+                font-weight: 800;
+
+                 /*ANIMATION KEYFRAME*/
+                animation-name: nav;
+                animation-duration: 1s;
+                transition-duration: 5s;
+                /*Délai avant activation*/
+                animation-delay: 5s;
+                @include anim;
+                @include axeY;
+              }
+                /*BUTTON HOVER*/
+              .container__click:hover{
+                background-color: #fe7d76;
+            }
+    
+    }
+}
+
+.videoPoppy{
+    width: 100%;
+}
+
+/*LOGO START*/
+
+@keyframes startLogo{
+     /*ETAPE DE TRANSFORMATIONS*/
+ 0%{
+    width: 18.75rem;
+    transform: rotate(100deg);
+    opacity: 30%;
+ }
+
+ 10%{
+    width: 25rem;
+    transform: rotate(60deg);
+    opacity: 80%;
+   
+ }
+
+ 25%{
+    width: 25rem;
+    transform: rotate(0deg);
+    opacity: 90%;
+   
+ }
+
+ 50%{
+    width: 25rem;
+    transform: rotate(0deg);
+    opacity: 95%;
+    
+ }
+
+ 60%{
+    width: 25rem;
+    transform: rotate(0deg);
+    opacity: 100%;
+}
+
+ 75%{
+    width: 25rem;
+    transform: rotate(0deg);
+    opacity: 100%;
+}
+
+
+80%{
+    width: 25rem;
+    transform: rotate(0deg);
+    opacity: 80%;
+}
+
+85%{
+    width: 25rem;
+    transform: rotate(0deg);
+    opacity: 60%;
+}
+
+98%{
+    width: 25rem;
+    transform: rotate(0deg);
+    opacity: 0%;
+}
+
+ 100%{
+    width: 25rem;
+    opacity: 0%;
+    transform: rotate(0deg);
+    
+    }
+
+}
+
+/*LOGO TEXT*/
+@keyframes startTitle{
+    /*ETAPE DE TRANSFORMATIONS*/
+0%{
+   width: 18.75rem;
+   transform: rotate(0deg);
+   opacity: 90%;
+   margin-left:-31.25rem;
+}
+
+ 10%{
+    width: 500px;
+    transform: rotate(0deg);
+    opacity: 99%;
+    margin-left:-200px;
+   
+ }
+
+ 25%{
+    width: 31.25rem;
+    transform: rotate(0deg);
+    opacity: 100%;
+    margin-left:-3.125rem;
+   
+ }
+
+ 50%{
+    width: 31.25rem;
+    transform: rotate(0deg);
+    opacity: 100%;
+    margin-left:0px;
+    
+ }
+
+ 75%{
+    width: 31.25rem;
+    transform: rotate(0deg);
+    opacity: 80%;
+}
+
+95%{
+    width: 31.25rem;
+    transform: rotate(0deg);
+    opacity: 60%;
+}
+
+98%{
+    width: 31.25rem;
+    transform: rotate(0deg);
+    opacity: 0%;
+}
+
+100%{
+    transform: rotate(0deg);
+    opacity: 0%;
+    }
+
+}
+
+
+/*Main*/
+@keyframes sizeMain{
+    /*ETAPE DE TRANSFORMATIONS*/
+  0%{
+     height: 1000px;
+ }
+
+ 10%{
+    height: 900px;
+ }
+
+  25%{
+     height: 800px;
+  }
+
+  50%{
+     height: 600px;
+  }
+
+  75%{
+     height: 500px;
+ }
+
+ 100%{
+     height: 400px;
+     }
+ }
+
+ /*LOGO & NAV & Button*/
+ @keyframes nav{
+     /*ETAPE DE TRANSFORMATIONS*/
+ 0%{
+    transform: translateY(-100%);
+ }
+
+
+100%{
+    transform: translateY(45%);
+    }
+
+}
