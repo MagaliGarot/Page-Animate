@@ -59,6 +59,12 @@ main .logo {
   margin-top: 15%;
 }
 
+@media (max-width: 1200px) {
+  main .logo {
+    margin-left: 20%;
+  }
+}
+
 main .logo .logo__picture {
   position: relative;
   width: 18.75rem;
@@ -175,12 +181,15 @@ main .barre .container .container__icone .container__icone__text {
 
 main .barre .container .burger {
   display: none;
-  position: relative;
+  position: absolute;
   border-radius: 10px;
   width: 2rem;
   height: 4.5rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   line-height: 3;
+  /* POSITION : Y -> position TOP*/
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   /*invisible text*/
   /*permet de couper ce qui dépasse*/
   overflow: hidden;
@@ -192,7 +201,24 @@ main .barre .container .burger {
 @media (max-width: 1200px) {
   main .barre .container .burger {
     display: inline-block;
-    margin-right: 2rem;
+    top: 0.90rem;
+    right: 4rem;
+    /*ANIMATION KEYFRAME*/
+    -webkit-animation-name: nav;
+            animation-name: nav;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-transition-duration: 5s;
+            transition-duration: 5s;
+    /*Délai avant activation*/
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+    /*Permet un mouvement plus fluide*/
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    /*Animation qui se répète pas*/
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 
@@ -203,6 +229,7 @@ main .barre .container .burger .burger__icone {
 main .barre .container .burger .burger__text {
   font-family: "Proza Libre", sans-serif;
   font-size: 1em;
+  text-align: right;
   font-weight: 600;
   color: white;
 }
@@ -210,6 +237,10 @@ main .barre .container .burger .burger__text {
 main .barre .container .burger:hover {
   width: 30rem;
   height: 60rem;
+}
+
+main .barre .container .burger__text:hover {
+  color: #fe7d76;
 }
 
 main .barre .container #menu {
