@@ -6,8 +6,7 @@ $font:'Proza Libre', sans-serif;
 /*-----RESPONSIVE----*/
 
 $breakpoints: (
-    phone-only: 800px,
-    /*599*/
+    phone-only: 599px,
     tablet-portrait-up: 600px,
     tablet-landscape-up:900px,
     desktop-up-small: 1200px,
@@ -118,6 +117,11 @@ main{
          /*Délai avant activation*/
          animation-delay: 0s;
          @include anim;
+
+         @include for-desktop-up-small {
+             width: 16rem;
+        }
+         
         }
     
         .logo__text{
@@ -133,6 +137,10 @@ main{
          /*Délai avant activation*/
          animation-delay: 0s;
          @include anim;
+
+         @include for-desktop-up-small {
+            font-size: 3rem;
+        }
         
         }
     }
@@ -140,11 +148,11 @@ main{
     /*------NAV LOGO & TEXT------*/
     
     .barre{
-    
+
         .container{
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
+        
         
             .container__icone{
                 display: flex;
@@ -177,11 +185,10 @@ main{
 
         .burger{
             display: none;
+            position: relative;
             border-radius: 10px;
             width: 2rem;
             height: 4.5rem;
-            margin-right: 40%;
-            margin-left: 40%;
             font-size: 2rem;
             line-height: 3;
              /*invisible text*/
@@ -190,8 +197,20 @@ main{
             /*TRANSITION*/
             transition: all 0.3s ease-out;
 
-            @include for-phone-only {
+            @include for-desktop-up-small {
                 display: inline-block;
+                margin-right:2rem;
+            }
+
+            .burger__icone{
+                color: $colorWhite;
+            }
+
+            .burger__text{
+                font-family: $font;
+                font-size: 1em;
+                font-weight: 600;
+                color: $colorWhite;
             }
         }
         
@@ -208,7 +227,7 @@ main{
             margin-left: 5rem;
             transform: translateY(10%);
 
-            @include for-phone-only {
+            @include for-desktop-up-small {
                 display: none;
             }
         
@@ -312,6 +331,10 @@ main{
                     animation-delay: 5s;
                     @include anim;
                     @include axeY;
+
+                    @include for-desktop-up-small {
+                        margin-right: 17rem;
+                   }
                   }
                     /*BUTTON HOVER*/
                   .container__click:hover{
@@ -337,7 +360,7 @@ main{
              font-size: 8em;
              font-weight: 800;
 
-             transform: translate(15%, 79%);
+             transform: translate(15%, 93%);
              opacity: 0%;
 
             /*ANIMATION KEYFRAME*/
@@ -347,6 +370,11 @@ main{
             /*Délai avant activation*/
             animation-delay: 4s;
             @include anim;
+
+            @include for-desktop-up-small {
+                font-size: 4em;
+                transform: translate(15%, 200%);
+           }
         }
 
         &__textTwo{
@@ -368,6 +396,12 @@ main{
             /*Délai avant activation*/
             animation-delay: 5s;
             @include anim;
+
+
+            @include for-desktop-up-small {
+                font-size: 4em;
+                transform: translate(15%, 360%);
+           }
         }
 
         &__textThree{
@@ -378,7 +412,9 @@ main{
             font-family: $font;
             font-size: 1.2em;
 
-            transform: translate(15%, 700%);
+            width: 700px;
+
+            transform: translate(25%, 450%);
             opacity: 0%;
 
             /*ANIMATION KEYFRAME*/
@@ -388,6 +424,11 @@ main{
             /*Délai avant activation*/
             animation-delay: 5s;
             @include anim;
+
+
+            @include for-desktop-up-small {
+                transform: translate(12%, 420%);
+           }
         }
         /*BUTTON*/
         &__textFour{
@@ -401,7 +442,7 @@ main{
 
             padding: 15px 30px;
 
-            transform: translate(60%, 1100%);
+            transform: translate(65%, 1000%);
             opacity: 0%;
             background-color: $colorWhite;
             -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 0 100%, 0% 70%, 0 13%); 
@@ -415,6 +456,10 @@ main{
             /*Délai avant activation*/
             animation-delay: 5s;
             @include anim;
+
+            @include for-desktop-up-small {
+                transform: translate(35%, 1000%);
+           }
         }
 
         /*BUTTON HOVER*/
@@ -551,7 +596,7 @@ main{
 
 /*Main*/
 @keyframes sizeMain{
-    /*ETAPE DE TRANSFORMATIONS*/
+    /*-------MAIN SIZE-------*/
   0%{
      height: 100%;
  }
@@ -573,7 +618,7 @@ main{
  }
 
  100%{
-     height: 30%;
+     height: 40%;
      }
  }
 

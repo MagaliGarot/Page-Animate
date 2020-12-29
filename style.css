@@ -83,6 +83,12 @@ main .logo .logo__picture {
           animation-fill-mode: forwards;
 }
 
+@media (max-width: 1200px) {
+  main .logo .logo__picture {
+    width: 16rem;
+  }
+}
+
 main .logo .logo__text {
   position: relative;
   color: white;
@@ -107,12 +113,16 @@ main .logo .logo__text {
           animation-fill-mode: forwards;
 }
 
+@media (max-width: 1200px) {
+  main .logo .logo__text {
+    font-size: 3rem;
+  }
+}
+
 main .barre .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -165,11 +175,10 @@ main .barre .container .container__icone .container__icone__text {
 
 main .barre .container .burger {
   display: none;
+  position: relative;
   border-radius: 10px;
   width: 2rem;
   height: 4.5rem;
-  margin-right: 40%;
-  margin-left: 40%;
   font-size: 2rem;
   line-height: 3;
   /*invisible text*/
@@ -180,10 +189,22 @@ main .barre .container .burger {
   transition: all 0.3s ease-out;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   main .barre .container .burger {
     display: inline-block;
+    margin-right: 2rem;
   }
+}
+
+main .barre .container .burger .burger__icone {
+  color: white;
+}
+
+main .barre .container .burger .burger__text {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
 }
 
 main .barre .container .burger:hover {
@@ -206,7 +227,7 @@ main .barre .container #menu {
   /*BUTTON HOVER*/
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   main .barre .container #menu {
     display: none;
   }
@@ -424,6 +445,12 @@ main .barre .container .container__click {
           transform: translateY(-100%);
 }
 
+@media (max-width: 1200px) {
+  main .barre .container .container__click {
+    margin-right: 17rem;
+  }
+}
+
 main .barre .container .container__click:hover {
   background-color: #fe7d76;
 }
@@ -445,8 +472,8 @@ main .barre .container .container__click:hover {
   font-family: "Proza Libre", sans-serif;
   font-size: 8em;
   font-weight: 800;
-  -webkit-transform: translate(15%, 79%);
-          transform: translate(15%, 79%);
+  -webkit-transform: translate(15%, 93%);
+          transform: translate(15%, 93%);
   opacity: 0%;
   /*ANIMATION KEYFRAME*/
   -webkit-animation-name: hero;
@@ -464,6 +491,14 @@ main .barre .container .container__click:hover {
   /*Animation qui se répète pas*/
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@media (max-width: 1200px) {
+  .containerHero__textOne {
+    font-size: 4em;
+    -webkit-transform: translate(15%, 200%);
+            transform: translate(15%, 200%);
+  }
 }
 
 .containerHero__textTwo {
@@ -495,6 +530,14 @@ main .barre .container .container__click:hover {
           animation-fill-mode: forwards;
 }
 
+@media (max-width: 1200px) {
+  .containerHero__textTwo {
+    font-size: 4em;
+    -webkit-transform: translate(15%, 360%);
+            transform: translate(15%, 360%);
+  }
+}
+
 .containerHero__textThree {
   /*FONT*/
   position: absolute;
@@ -502,8 +545,9 @@ main .barre .container .container__click:hover {
   color: white;
   font-family: "Proza Libre", sans-serif;
   font-size: 1.2em;
-  -webkit-transform: translate(15%, 700%);
-          transform: translate(15%, 700%);
+  width: 700px;
+  -webkit-transform: translate(25%, 450%);
+          transform: translate(25%, 450%);
   opacity: 0%;
   /*ANIMATION KEYFRAME*/
   -webkit-animation-name: hero;
@@ -523,6 +567,13 @@ main .barre .container .container__click:hover {
           animation-fill-mode: forwards;
 }
 
+@media (max-width: 1200px) {
+  .containerHero__textThree {
+    -webkit-transform: translate(12%, 420%);
+            transform: translate(12%, 420%);
+  }
+}
+
 .containerHero__textFour {
   /*FONT*/
   position: absolute;
@@ -532,8 +583,8 @@ main .barre .container .container__click:hover {
   font-size: 1.5em;
   font-weight: 200;
   padding: 15px 30px;
-  -webkit-transform: translate(60%, 1100%);
-          transform: translate(60%, 1100%);
+  -webkit-transform: translate(65%, 1000%);
+          transform: translate(65%, 1000%);
   opacity: 0%;
   background-color: white;
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 0 100%, 0% 70%, 0 13%);
@@ -554,6 +605,13 @@ main .barre .container .container__click:hover {
   /*Animation qui se répète pas*/
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@media (max-width: 1200px) {
+  .containerHero__textFour {
+    -webkit-transform: translate(35%, 1000%);
+            transform: translate(35%, 1000%);
+  }
 }
 
 .containerHero__textFour:hover {
@@ -787,7 +845,7 @@ main .barre .container .container__click:hover {
 
 /*Main*/
 @-webkit-keyframes sizeMain {
-  /*ETAPE DE TRANSFORMATIONS*/
+  /*-------MAIN SIZE-------*/
   0% {
     height: 100%;
   }
@@ -804,11 +862,11 @@ main .barre .container .container__click:hover {
     height: 50%;
   }
   100% {
-    height: 30%;
+    height: 40%;
   }
 }
 @keyframes sizeMain {
-  /*ETAPE DE TRANSFORMATIONS*/
+  /*-------MAIN SIZE-------*/
   0% {
     height: 100%;
   }
@@ -825,7 +883,7 @@ main .barre .container .container__click:hover {
     height: 50%;
   }
   100% {
-    height: 30%;
+    height: 40%;
   }
 }
 
