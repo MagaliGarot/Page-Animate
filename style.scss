@@ -14,7 +14,7 @@ $font:'Proza Libre', sans-serif;
     font-family: $font;
     text-align: center;
     font-weight: 800;
-    font-size: 0,5rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -29,6 +29,7 @@ $font:'Proza Libre', sans-serif;
      /* POSITION : Y -> position TOP*/
      transform: translateY(-100%);
 }
+
 /*-----------ALL-----------*/
 * {
     margin: 0;
@@ -39,11 +40,21 @@ $font:'Proza Libre', sans-serif;
 html {
     width: 100%;
     height: 100%;
+    background-color: red;
+}
+
+body{
+    width: 100%;
+    height: 100%;
 }
 
 a {
     text-decoration: none;
 }
+
+/*--------BODY--------*/
+
+/*--LOGO & TEXT START--*/
 
 main{
     background-color: $colorGray;
@@ -56,176 +67,60 @@ main{
     /*Délai avant activation*/
     animation-delay: 3s;
     @include anim;
-}
 
-body{
-    background-color: $colorWhite;
-    width: 100%;
-    height: 100%;
-}
-
-/*--------BODY--------*/
-
-/*--LOGO & TEXT START--*/
-
-.logo{
-    display: flex;
-    position: absolute;
-    margin-right: 30%;
-    margin-left: 30%;
-    margin-top: 15%;
-
-    .logo__picture{
-    position: relative;
-    width: 18.75rem;
-    display: block;
-    margin-top: -3.125rem;
-    /*ANIMATION KEYFRAME*/
-     animation-name: startLogo;
-     animation-duration: 3s;
-     /*Durée de l'anim*/
-     transition-duration: 3s;
-     /*Délai avant activation*/
-     animation-delay: 0s;
-     @include anim;
-    }
-
-    .logo__text{
-        position: relative;
-        color:$colorWhite;
-        font-family: $font;
-        font-size: 6rem;
-            /*ANIMATION KEYFRAME*/
-     animation-name: startTitle;
-     animation-duration: 3s;
-     /*Durée de l'anim*/
-     transition-duration: 3s;
-     /*Délai avant activation*/
-     animation-delay: 0s;
-     @include anim;
-    
-    }
-}
-
-/*------NAV LOGO & TEXT------*/
-
-.barre{
-
-    .container{
+    .logo{
         display: flex;
-        justify-content: space-between;
+        position: absolute;
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-top: 15%;
     
-        .container__icone{
-            display: flex;
-            justify-content: flex-start;
-            margin-left: 2rem;
-
-            @include axeY;
-             /*ANIMATION KEYFRAME*/
-            animation-name: nav;
-            animation-duration: 1s;
-            transition-duration: 5s;
-            /*Délai avant activation*/
-            animation-delay: 5s;
-            @include anim;
-    
-            .container__icone__image{
-                display: block;
-                margin-top: -0.75rem;
-                width: 6.25rem;
-            }
-        
-            .container__icone__text{
-                color:$colorWhite;
-                font-family: $font;
-                margin-left: 3px;
-            }
+        .logo__picture{
+        position: relative;
+        width: 18.75rem;
+        display: block;
+        margin-top: -3.125rem;
+        /*ANIMATION KEYFRAME*/
+         animation-name: startLogo;
+         animation-duration: 3s;
+         /*Durée de l'anim*/
+         transition-duration: 3s;
+         /*Délai avant activation*/
+         animation-delay: 0s;
+         @include anim;
         }
     
-        /*-----------NAV-----------*/
-     #menu {
-        /*CONTAINER FLEX*/
-        display: flex;
-        align-items: center;
-        margin-left: 5rem;
-        transform: translateY(10%);
-    
-       .menu__One{
-        /*ANIMATION KEYFRAME*/
-        animation-name: nav;
-        animation-duration: 1s;
-        transition-duration: 4s;
-        /*Délai avant activation*/
-        animation-delay: 4s;
-        @include anim;
-        @include menu;
-        @include axeY;
-      }
-
-      .menu__Two{
-        /*ANIMATION KEYFRAME*/
-        animation-name: nav;
-        animation-duration: 1s;
-        transition-duration: 4s;
-        /*Délai avant activation*/
-        animation-delay: 4.5s;
-        @include anim;
-        @include menu;
-        @include axeY;
-      }
-
-      .menu__Three{
-        /*ANIMATION KEYFRAME*/
-        animation-name: nav;
-        animation-duration: 1s;
-        transition-duration: 4s;
-        /*Délai avant activation*/
-        animation-delay: 5s;
-        @include anim;
-        @include menu;
-        @include axeY;
-      }
-
-      .menu__Four{
-        /*ANIMATION KEYFRAME*/
-        animation-name: nav;
-        animation-duration: 1s;
-        transition-duration: 4s;
-        /*Délai avant activation*/
-        animation-delay: 5.5s;
-        @include anim;
-        @include menu;
-        @include axeY;
-      }
-
-      .menu__Five{
-        /*ANIMATION KEYFRAME*/
-        animation-name: nav;
-        animation-duration: 1s;
-        transition-duration: 4s;
-        /*Délai avant activation*/
-        animation-delay: 6s;
-        @include anim;
-        @include menu;
-        @include axeY;
-      }
-
+        .logo__text{
+            position: relative;
+            color:$colorWhite;
+            font-family: $font;
+            font-size: 6rem;
+                /*ANIMATION KEYFRAME*/
+         animation-name: startTitle;
+         animation-duration: 3s;
+         /*Durée de l'anim*/
+         transition-duration: 3s;
+         /*Délai avant activation*/
+         animation-delay: 0s;
+         @include anim;
+        
+        }
     }
     
-             /*BUTTON LEFT*/
-             .container__click{
-                width: 18.75rem;
-                height: 4.688rem;
-                margin-right: 2rem;
-                border-radius: 0px 10px 0px 10px;
-                background-color: #576967;
-                border: none;
-                /*FONT*/
-                color: $colorWhite;
-                font-family: $font;
-                font-size: 0,5em;
-                font-weight: 800;
-
+    /*------NAV LOGO & TEXT------*/
+    
+    .barre{
+    
+        .container{
+            display: flex;
+            justify-content: space-between;
+        
+            .container__icone{
+                display: flex;
+                justify-content: flex-start;
+                margin-left: 2rem;
+    
+                @include axeY;
                  /*ANIMATION KEYFRAME*/
                 animation-name: nav;
                 animation-duration: 1s;
@@ -233,19 +128,240 @@ body{
                 /*Délai avant activation*/
                 animation-delay: 5s;
                 @include anim;
-                @include axeY;
-              }
-                /*BUTTON HOVER*/
-              .container__click:hover{
+        
+                .container__icone__image{
+                    display: block;
+                    margin-top: -0.75rem;
+                    width: 6.25rem;
+                }
+            
+                .container__icone__text{
+                    color:$colorWhite;
+                    font-family: $font;
+                    margin-left: 3px;
+                }
+            }
+        
+            /*-----------NAV-----------*/
+         #menu {
+            /*CONTAINER FLEX*/
+            display: flex;
+            align-items: center;
+            margin-left: 5rem;
+            transform: translateY(10%);
+        
+           .menu__One{
+            /*ANIMATION KEYFRAME*/
+            animation-name: nav;
+            animation-duration: 1s;
+            transition-duration: 4s;
+            /*Délai avant activation*/
+            animation-delay: 4s;
+            @include anim;
+            @include menu;
+            @include axeY;
+          }
+
+             /*BUTTON HOVER*/
+            &__textFour:hover{
                 background-color: #fe7d76;
+                color: $colorWhite;
             }
     
+          .menu__Two{
+            /*ANIMATION KEYFRAME*/
+            animation-name: nav;
+            animation-duration: 1s;
+            transition-duration: 4s;
+            /*Délai avant activation*/
+            animation-delay: 4.5s;
+            @include anim;
+            @include menu;
+            @include axeY;
+          }
+    
+          .menu__Three{
+            /*ANIMATION KEYFRAME*/
+            animation-name: nav;
+            animation-duration: 1s;
+            transition-duration: 4s;
+            /*Délai avant activation*/
+            animation-delay: 5s;
+            @include anim;
+            @include menu;
+            @include axeY;
+          }
+    
+          .menu__Four{
+            /*ANIMATION KEYFRAME*/
+            animation-name: nav;
+            animation-duration: 1s;
+            transition-duration: 4s;
+            /*Délai avant activation*/
+            animation-delay: 5.5s;
+            @include anim;
+            @include menu;
+            @include axeY;
+          }
+    
+          .menu__Five{
+            /*ANIMATION KEYFRAME*/
+            animation-name: nav;
+            animation-duration: 1s;
+            transition-duration: 4s;
+            /*Délai avant activation*/
+            animation-delay: 6s;
+            @include anim;
+            @include menu;
+            @include axeY;
+          }
+
+          /*BUTTON HOVER*/
+          .menu__One:hover, 
+          .menu__Two:hover,
+          .menu__Three:hover,
+          .menu__Four:hover, 
+          .menu__Five:hover{
+            color:  #fe7d76;
+            font-size: 1.3rem;
+        }
+    
+        }
+        
+                 /*BUTTON LEFT*/
+                 .container__click{
+                    width: 18.75rem;
+                    height: 4.688rem;
+                    margin-right: 2rem;
+                    border-radius: 0px 10px 0px 10px;
+                    background-color: #576967;
+                    border: none;
+                    /*FONT*/
+                    color: $colorWhite;
+                    font-family: $font;
+                    font-size: 1em;
+                    font-weight: 800;
+    
+                     /*ANIMATION KEYFRAME*/
+                    animation-name: nav;
+                    animation-duration: 1s;
+                    transition-duration: 5s;
+                    /*Délai avant activation*/
+                    animation-delay: 5s;
+                    @include anim;
+                    @include axeY;
+                  }
+                    /*BUTTON HOVER*/
+                  .container__click:hover{
+                    background-color: #fe7d76;
+                }
+        
+        }
     }
 }
 
-// .videoPoppy{
-//     width: 100%;
-// }
+    .videoPoppy{
+        width: 100%;
+    }
+
+    .containerHero{
+
+        &__textOne{
+             /*FONT*/
+             position: absolute;
+             z-index: 1;
+             color: $colorWhite;
+             font-family: $font;
+             font-size: 8em;
+             font-weight: 800;
+
+             transform: translate(15%, 79%);
+             opacity: 0%;
+
+            /*ANIMATION KEYFRAME*/
+            animation-name: hero;
+            animation-duration: 2s;
+            transition-duration: 5s;
+            /*Délai avant activation*/
+            animation-delay: 4s;
+            @include anim;
+        }
+
+        &__textTwo{
+             /*FONT*/
+             position: absolute;
+             z-index: 2;
+             color: $colorWhite;
+             font-family: $font;
+             font-size: 8em;
+             font-weight: 800;
+
+             transform: translate(15%, 180%);
+             opacity: 0%;
+
+            /*ANIMATION KEYFRAME*/
+            animation-name: hero;
+            animation-duration: 1s;
+            transition-duration: 5s;
+            /*Délai avant activation*/
+            animation-delay: 5s;
+            @include anim;
+        }
+
+        &__textThree{
+            /*FONT*/
+            position: absolute;
+            z-index: 3;
+            color: $colorWhite;
+            font-family: $font;
+            font-size: 1.2em;
+
+            transform: translate(15%, 700%);
+            opacity: 0%;
+
+            /*ANIMATION KEYFRAME*/
+            animation-name: hero;
+            animation-duration: 1s;
+            transition-duration: 5s;
+            /*Délai avant activation*/
+            animation-delay: 5s;
+            @include anim;
+        }
+        /*BUTTON*/
+        &__textFour{
+            /*FONT*/
+            position: absolute;
+            z-index: 4;
+            color: $colorGray;
+            font-family: $font;
+            font-size: 1.5em;
+            font-weight: 200;
+
+            padding: 15px 30px;
+
+            transform: translate(60%, 1100%);
+            opacity: 0%;
+            background-color: $colorWhite;
+            -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 0 100%, 0% 70%, 0 13%); 
+            clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 0 100%, 0% 70%, 0 13%);
+
+
+            /*ANIMATION KEYFRAME*/
+            animation-name: hero;
+            animation-duration: 1s;
+            transition-duration: 5s;
+            /*Délai avant activation*/
+            animation-delay: 5s;
+            @include anim;
+        }
+
+        /*BUTTON HOVER*/
+        &__textFour:hover{
+            background-color: #fe7d76;
+            color: $colorWhite;
+        }
+
+    }
 
 /*LOGO START*/
 
@@ -322,14 +438,12 @@ body{
 @keyframes startTitle{
     /*ETAPE DE TRANSFORMATIONS*/
 0%{
-   width: 18.75rem;
    transform: rotate(0deg);
    opacity: 90%;
    margin-left:-31.25rem;
 }
 
  10%{
-    width: 500px;
     transform: rotate(0deg);
     opacity: 99%;
     margin-left:-200px;
@@ -337,7 +451,6 @@ body{
  }
 
  25%{
-    width: 31.25rem;
     transform: rotate(0deg);
     opacity: 100%;
     margin-left:-3.125rem;
@@ -345,7 +458,6 @@ body{
  }
 
  50%{
-    width: 31.25rem;
     transform: rotate(0deg);
     opacity: 100%;
     margin-left:0px;
@@ -353,19 +465,16 @@ body{
  }
 
  75%{
-    width: 31.25rem;
     transform: rotate(0deg);
     opacity: 80%;
 }
 
 95%{
-    width: 31.25rem;
     transform: rotate(0deg);
     opacity: 60%;
 }
 
 98%{
-    width: 31.25rem;
     transform: rotate(0deg);
     opacity: 0%;
 }
@@ -417,5 +526,49 @@ body{
 100%{
     transform: translateY(45%);
     }
+
+}
+
+ /*HERO OPACITY*/
+ @keyframes hero{
+    /*ETAPE DE TRANSFORMATIONS*/
+0%{
+   opacity: 0%;
+}
+
+25%{
+    opacity: 20%;
+ }
+
+ 50%{
+    opacity: 60%;
+ }
+
+ 75%{
+    opacity: 80%;
+}
+
+100%{
+    opacity: 100%;
+   }
+
+}
+
+
+/* ---- RESPONSIVE------MEDIA QUERIES-----*/
+
+/*---------TABLETTE---------*/
+
+@media screen and (max-width: 1315px) {
+
+  
+
+}
+/*----------MEDIA QUERIES------------*/
+
+/*---------SMARTPHONE---------*/
+@media screen and (max-width: 800px) {
+
+
 
 }
