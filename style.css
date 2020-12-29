@@ -114,7 +114,8 @@ main .barre .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*-----------NAV-----------*/
+  /*NAV SMARTHONE ET TABLETTE*/
+  /*-----------NAV COMPUTER-----------*/
   /*BUTTON LEFT*/
   /*BUTTON HOVER*/
 }
@@ -158,6 +159,28 @@ main .barre .container .container__icone .container__icone__text {
   color: white;
   font-family: "Proza Libre", sans-serif;
   margin-left: 3px;
+}
+
+main .barre .container .burger {
+  display: none;
+  border-radius: 10px;
+  width: 2rem;
+  height: 4.5rem;
+  margin-right: 40%;
+  margin-left: 40%;
+  font-size: 2rem;
+  line-height: 3;
+  /*invisible text*/
+  /*permet de couper ce qui dépasse*/
+  overflow: hidden;
+  /*TRANSITION*/
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+main .barre .container .burger:hover {
+  width: 30rem;
+  height: 60rem;
 }
 
 main .barre .container #menu {
@@ -858,4 +881,16 @@ main .barre .container .container__click:hover {
 /*---------TABLETTE---------*/
 /*----------MEDIA QUERIES------------*/
 /*---------SMARTPHONE---------*/
+@media screen and (max-width: 800px) {
+  /*------NAV LOGO & TEXT------*/
+  .burger {
+    display: inline-block;
+  }
+  /*-----------NAV COMPUTER-----------*/
+  #menu {
+    /*CONTAINER FLEX*/
+    display: none;
+    color: yellow;
+  }
+}
 /*# sourceMappingURL=style.css.map */
