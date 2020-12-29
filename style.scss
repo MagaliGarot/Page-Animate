@@ -191,12 +191,15 @@ main{
             display: none;
             position: absolute;
             border-radius: 10px;
-            width: 2rem;
-            height: 4.5rem;
+
+            top: 0.90rem;
+            right: 9rem;
+
+            width: 1.8rem;
+            height: 3rem;
             font-size: 1rem;
             line-height: 3;
             @include axeY;
-           
              /*invisible text*/
              /*permet de couper ce qui dépasse*/
             overflow: hidden;
@@ -205,8 +208,6 @@ main{
 
             @include for-desktop-up-small {
                 display: inline-block;
-                top: 0.90rem;
-                right: 4rem;
                 /*ANIMATION KEYFRAME*/
                 animation-name: nav;
                 animation-duration: 1s;
@@ -230,8 +231,7 @@ main{
         }
         
         .burger:hover{
-            width: 30rem;
-            height: 60rem;
+            overflow: visible;
         }
 
         .burger__text:hover{
