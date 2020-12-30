@@ -199,7 +199,6 @@ main{
 
             width: 4rem;
             height: 6rem;
-            font-size: 3rem;
             line-height: 2;
             @include axeY;
              /*invisible text*/
@@ -221,6 +220,7 @@ main{
 
             .burger__icone{
                 color: $colorWhite;
+                font-size: 3rem;
             }
 
             .burger__text{
