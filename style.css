@@ -189,7 +189,6 @@ main .barre .container .burger {
   right: 9rem;
   width: 4rem;
   height: 6rem;
-  font-size: 3rem;
   line-height: 2;
   /* POSITION : Y -> position TOP*/
   -webkit-transform: translateY(-100%);
@@ -226,11 +225,12 @@ main .barre .container .burger {
 
 main .barre .container .burger .burger__icone {
   color: white;
+  font-size: 3rem;
 }
 
 main .barre .container .burger .burger__text {
   font-family: "Proza Libre", sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   text-align: right;
   font-weight: 600;
   color: white;
