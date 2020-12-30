@@ -181,6 +181,8 @@ main{
                 .container__icone__text{
                     color:$colorWhite;
                     font-family: $font;
+                    font-weight: 800;
+                    font-size: 1.5em;
                     margin-left: 3px;
                 }
             }
@@ -192,7 +194,7 @@ main{
             position: absolute;
             border-radius: 10px;
 
-            top: -3rem;
+            top: -1rem;
             right: 9rem;
 
             width: 4rem;
@@ -223,7 +225,7 @@ main{
 
             .burger__text{
                 font-family: $font;
-                font-size: 0.6em;
+                font-size: 0.9em;
                 text-align: right;
                 font-weight: 600;
                 color: $colorWhite;

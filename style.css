@@ -176,6 +176,8 @@ main .barre .container .container__icone .container__icone__image {
 main .barre .container .container__icone .container__icone__text {
   color: white;
   font-family: "Proza Libre", sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
   margin-left: 3px;
 }
 
@@ -183,7 +185,7 @@ main .barre .container .burger {
   display: none;
   position: absolute;
   border-radius: 10px;
-  top: -3rem;
+  top: -1rem;
   right: 9rem;
   width: 4rem;
   height: 6rem;
@@ -228,7 +230,7 @@ main .barre .container .burger .burger__icone {
 
 main .barre .container .burger .burger__text {
   font-family: "Proza Libre", sans-serif;
-  font-size: 0.6em;
+  font-size: 0.9em;
   text-align: right;
   font-weight: 600;
   color: white;
