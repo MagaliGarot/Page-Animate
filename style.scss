@@ -100,6 +100,7 @@ main{
     .logo{
         display: flex;
         position: absolute;
+        z-index: 10;
         margin-right: 30%;
         margin-left: 30%;
         margin-top: 15%;
@@ -110,6 +111,7 @@ main{
     
         .logo__picture{
         position: relative;
+        z-index: 8;
         width: 18.75rem;
         display: block;
         margin-top: -3.125rem;
@@ -123,6 +125,7 @@ main{
          @include anim;
 
          @include for-desktop-up-small {
+            //  width: 16rem;
              width: 14rem;
         }
          
@@ -143,6 +146,7 @@ main{
          @include anim;
 
          @include for-desktop-up-small {
+            // font-size: 3rem;
             font-size: 5rem;
         }
         
@@ -567,27 +571,27 @@ main{
     /*ETAPE DE TRANSFORMATIONS*/
 0%{
    transform: rotate(0deg);
-   opacity: 90%;
+   opacity: 0%;
    margin-left:-31.25rem;
 }
 
  10%{
     transform: rotate(0deg);
-    opacity: 99%;
+    opacity: 5%;
     margin-left:-200px;
    
  }
 
  25%{
     transform: rotate(0deg);
-    opacity: 100%;
+    opacity: 20%;
     margin-left:-3.125rem;
    
  }
 
  50%{
     transform: rotate(0deg);
-    opacity: 100%;
+    opacity: 90%;
     margin-left:0px;
     
  }

@@ -54,6 +54,7 @@ main .logo {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  z-index: 10;
   margin-right: 30%;
   margin-left: 30%;
   margin-top: 15%;
@@ -67,6 +68,7 @@ main .logo {
 
 main .logo .logo__picture {
   position: relative;
+  z-index: 8;
   width: 18.75rem;
   display: block;
   margin-top: -3.125rem;
@@ -785,25 +787,25 @@ main .barre .container .container__click:hover {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 90%;
+    opacity: 0%;
     margin-left: -31.25rem;
   }
   10% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 99%;
+    opacity: 5%;
     margin-left: -200px;
   }
   25% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 100%;
+    opacity: 20%;
     margin-left: -3.125rem;
   }
   50% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 100%;
+    opacity: 90%;
     margin-left: 0px;
   }
   75% {
@@ -832,25 +834,25 @@ main .barre .container .container__click:hover {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 90%;
+    opacity: 0%;
     margin-left: -31.25rem;
   }
   10% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 99%;
+    opacity: 5%;
     margin-left: -200px;
   }
   25% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 100%;
+    opacity: 20%;
     margin-left: -3.125rem;
   }
   50% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 100%;
+    opacity: 90%;
     margin-left: 0px;
   }
   75% {
