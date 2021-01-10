@@ -91,7 +91,7 @@ main .logo .logo__picture {
 
 @media (max-width: 1200px) {
   main .logo .logo__picture {
-    width: 16rem;
+    width: 14rem;
   }
 }
 
@@ -121,7 +121,7 @@ main .logo .logo__text {
 
 @media (max-width: 1200px) {
   main .logo .logo__text {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
